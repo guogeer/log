@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 方案 -->
+<!-- 默认方案 -->
+<plan type="RollFile" id="default">
+  <path>logs</path>
+	<filesize>4096</filesize><!-- 单位KB -->
+	<filename>default.log</filename><!-- 格式为important.log.1 -->
+	<filenum>8</filenum>
+	<!--
+	MOD_NORMAL     1
+	MOD_DEBUG      2
+	MOD_WARNING    4
+	MOD_ERROR      8
+	MOD_FATAL      16
+	MOD_ALL        31
+	例如 MOD_ALL|~MOD_DEBUG 表示不输出调试信息
+	-->
+	<mode>29</mode> 
+</plan>
+
+<plan type="RollFile" id="stock">
+	<path>stocks</path>
+	<filesize>4096</filesize><!-- 单位KB -->
+	<filename>important.log</filename><!-- 格式为important.log.1 -->
+	<filenum>8</filenum>
+	<mode>29</mode> 
+</plan>
